@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Fri Aug 18 07:54:13 SGT 2017:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015d-f29e-66c5-0000055258f0 
-on database directory /Volumes/Samsung_T3/SgPopulationGenetics/GenoSpark/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@68d778 
+Mon Aug 28 19:15:21 SGT 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): instance a816c00e-015e-288d-950f-000005acec20 
+on database directory /Volumes/Samsung_T3/SgPopulationGenetics/GenoSpark/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@4804b820 
 Loaded from file:/Users/leehongkai/Spark/assembly/target/scala-2.11/jars/derby-10.12.1.1.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_121-b13
