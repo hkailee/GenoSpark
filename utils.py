@@ -1,6 +1,6 @@
 #!/usr/local/bin/python3
 
-import sqlite3
+import sqlite3, ast
 
 ##############################################
 ### Login to database
@@ -20,6 +20,7 @@ def makedb(dbfile, table, columnFeatures):
     conn, curs = login(dbfile)
     try:
         curs.execute('drop table ' + table)
+        print('Drop table ' + table)
     except:
         print('database table did not exist')
     command = 'create table %s %s' % (table, columnFeatures)
@@ -41,6 +42,39 @@ def loaddb(table, dbfile, datafile, conn=None, verbose=True):
         conn.commit()
     if verbose:
         print(len(rows), 'rows loaded')
+        
+def loaddb_chineseData(table, dbfile, datafile, conn=None, verbose=True):
+    conn, curs = login(dbfile)
+    file = open(datafile)
+    rows = [line.rstrip().split('\t') for line in file]  # [[x,x,x], [x,x,x]]
+    rows = [str(tuple(rec)) for rec in rows[1:]]            # ["(x,x,x)", "(x,x,x)"]
+    for recstr in rows:
+        if len(ast.literal_eval(recstr)) == 6:
+            #print(len(ast.literal_eval(recstr))
+            curs.execute('insert into ' + table + '(CHROM, POS, N_ALLELES, N_CHR, ALLELE_FREQ_1, ALLELE_FREQ_2)' + ' values ' + recstr)
+        if len(ast.literal_eval(recstr)) == 7:
+            curs.execute('insert into ' + table + '(CHROM, POS, N_ALLELES, N_CHR, ALLELE_FREQ_1, ALLELE_FREQ_2, ALLELE_FREQ_3)' + ' values ' + recstr)
+        if len(ast.literal_eval(recstr)) == 8:
+            curs.execute('insert into ' + table + '(CHROM, POS, N_ALLELES, N_CHR, ALLELE_FREQ_1, ALLELE_FREQ_2, ALLELE_FREQ_3, ALLELE_FREQ_4)' + ' values ' + recstr)
+    if conn:
+        conn.commit()
+    if verbose:
+        print(len(rows), 'rows loaded')
+        
+##############################################
+### Combining tables
+##############################################
+
+def combinetables(dbfile, table, query):
+    #columnFeatures = input("eg: (Column1 char(30), Column2 char(10), Column3 int(4))")
+    conn, curs = login(dbfile)
+    try:
+        curs.execute('drop table ' + table)
+    except:
+        print('database table did not exist')
+    command = 'create table %s as %s' % (table, query)
+    curs.execute(command)
+    conn.commit()
 
 ###################################################################################################
 ### Load Data manually from a raw vcf -
