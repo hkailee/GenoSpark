@@ -43,7 +43,7 @@ def loaddb(table, dbfile, datafile, conn=None, verbose=True):
         print(len(rows), 'rows loaded')
 
 ###################################################################################################
-### Load Data from a raw vcf -
+### Load Data manually from a raw vcf -
 ### Main created for the Singapore Malay vcf as
 ### command: bcftools query -f '%CHROM\t%POS\t%ID\n' SSM.chr8.2012_05.genotypes.vcf.gz -o chr8_rsID
 ### produced error as such: [E::bcf_hdr_add_sample] Empty sample name: trailing spaces/tabs in 
