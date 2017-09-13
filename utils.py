@@ -16,9 +16,13 @@ def login(dbfile):
 ##############################################
 
 def makedb(dbfile, table, columnFeatures):
-    columnFeatures = input("eg: (Column1 char(30), Column2 char(10), Column3 int(4))")
+    #columnFeatures = input("eg: (Column1 char(30), Column2 char(10), Column3 int(4))")
     conn, curs = login(dbfile)
-    command = 'create table %s %s' % table % columnFeatures
+    try:
+        curs.execute('drop table ' + table)
+    except:
+        print('database table did not exist')
+    command = 'create table %s %s' % (table, columnFeatures)
     curs.execute(command)
     conn.commit()
 
@@ -26,10 +30,11 @@ def makedb(dbfile, table, columnFeatures):
 ### Load Data
 ##############################################
 
-def loaddb(curs, table, datafile, conn=None, verbose=True):
-    file = open(datafile)                               # x,x,x\nx,x,x\n
-    rows = [line.rstrip().split(',') for line in file]  # [[x,x,x], [x,x,x]]
-    rows = [str(tuple(rec)) for rec in rows]            # ["(x,x,x)", "(x,x,x)"]
+def loaddb(table, dbfile, datafile, conn=None, verbose=True):
+    conn, curs = login(dbfile)
+    file = open(datafile)
+    rows = [line.rstrip().split('\t') for line in file]  # [[x,x,x], [x,x,x]]
+    rows = [str(tuple(rec)) for rec in rows[1:]]            # ["(x,x,x)", "(x,x,x)"]
     for recstr in rows:
         curs.execute('insert into ' + table + ' values ' + recstr)
     if conn:
@@ -37,6 +42,27 @@ def loaddb(curs, table, datafile, conn=None, verbose=True):
     if verbose:
         print(len(rows), 'rows loaded')
 
+###################################################################################################
+### Load Data from a raw vcf -
+### Main created for the Singapore Malay vcf as
+### command: bcftools query -f '%CHROM\t%POS\t%ID\n' SSM.chr8.2012_05.genotypes.vcf.gz -o chr8_rsID
+### produced error as such: [E::bcf_hdr_add_sample] Empty sample name: trailing spaces/tabs in 
+### the header line?
+###################################################################################################
+
+def loaddb_vcf_rsID(table, dbfile, datafile, conn=None, verbose=True):
+    conn, curs = login(dbfile)
+    file = open(datafile)
+    rows = [line.rstrip().split('\t') for line in file]  # [[x,x,x], [x,x,x]]
+    rows = [str(tuple(rec[:3])) for rec in rows[11:]]            # ["(x,x,x)", "(x,x,x)"]
+    for recstr in rows:
+        curs.execute('insert into ' + table + ' values ' + recstr)
+    if conn:
+        conn.commit()
+    if verbose:
+        print(len(rows), 'rows loaded')        
+        
+        
 ##############################################
 ### Make dictionaries from SQL
 ##############################################
@@ -59,14 +85,16 @@ def showformat(recs, sept=('-' * 40)):
             print('%-*s => %s' % (maxkey, key, rec[key]))   # -ljust, *len
         print(sept)
 
-def dumpdb(cursor, table, format=True):
+def dumpdb(dbfile, table, num=10, format=False):
+    conn, curs = login(dbfile)
     if not format:
-        cursor.execute('select * from ' + table)
+        curs.execute('select * from ' + table)
         while True:
-            rec = cursor.fetchone()
+            rec = curs.fetchmany(num)
             if not rec:
                 break
-            print(rec)
+            for row in rec:
+                print(row)
     else:
         recs = makedicts(cursor, 'select * from ' + table)
         showformat(recs)
@@ -75,5 +103,6 @@ def dumpdb(cursor, table, format=True):
 ### Remove a table from Database
 ##############################################
 
-def cleardb(cursor, table):
-    cursor.execute('delete from ' + table)
+def cleardb(dbfile, table):
+    conn, curs = login(dbfile)
+    curs.execute('delete from ' + table)
