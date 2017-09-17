@@ -34,3 +34,10 @@ def loaddb(table, dbfile, datafile, conn=None, verbose=True):
 def cleardb(dbfile, table):
     conn, curs = login(dbfile)
     curs.execute('drop table ' + table)
+    
+def makedicts(cursor, query, params=()):
+    cursor.execute(query, params)
+    colnames = [desc[0] for desc in cursor.description]
+    rowdicts = [dict(zip(colnames, row)) for row in cursor.fetchall()]
+    return rowdicts
+
