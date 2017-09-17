@@ -20,7 +20,7 @@ def makedb(dbfile, table, columnFeatures):
     conn, curs = login(dbfile)
     try:
         curs.execute('drop table ' + table)
-        print('Drop table ' + table)
+        print('Dropped table ' + table)
     except:
         print('database table did not exist')
     command = 'create table %s %s' % (table, columnFeatures)
@@ -51,11 +51,11 @@ def loaddb_chineseData(table, dbfile, datafile, conn=None, verbose=True):
     for recstr in rows:
         if len(ast.literal_eval(recstr)) == 6:
             #print(len(ast.literal_eval(recstr))
-            curs.execute('insert into ' + table + '(CHROM, POS, N_ALLELES, N_CHR, ALLELE_FREQ_1, ALLELE_FREQ_2)' + ' values ' + recstr)
+            curs.execute('insert into ' + table + '(CHROM, POS, N_ALLELES, N_CHR, Chinese_ALLELE_FREQ_1, Chinese_ALLELE_FREQ_2)' + ' values ' + recstr)
         if len(ast.literal_eval(recstr)) == 7:
-            curs.execute('insert into ' + table + '(CHROM, POS, N_ALLELES, N_CHR, ALLELE_FREQ_1, ALLELE_FREQ_2, ALLELE_FREQ_3)' + ' values ' + recstr)
+            curs.execute('insert into ' + table + '(CHROM, POS, N_ALLELES, N_CHR, Chinese_ALLELE_FREQ_1, Chinese_ALLELE_FREQ_2, Chinese_ALLELE_FREQ_3)' + ' values ' + recstr)
         if len(ast.literal_eval(recstr)) == 8:
-            curs.execute('insert into ' + table + '(CHROM, POS, N_ALLELES, N_CHR, ALLELE_FREQ_1, ALLELE_FREQ_2, ALLELE_FREQ_3, ALLELE_FREQ_4)' + ' values ' + recstr)
+            curs.execute('insert into ' + table + '(CHROM, POS, N_ALLELES, N_CHR, Chinese_ALLELE_FREQ_1, Chinese_ALLELE_FREQ_2, Chinese_ALLELE_FREQ_3, Chinese_ALLELE_FREQ_4)' + ' values ' + recstr)
     if conn:
         conn.commit()
     if verbose:
@@ -70,6 +70,7 @@ def combinetables(dbfile, table, query):
     conn, curs = login(dbfile)
     try:
         curs.execute('drop table ' + table)
+        print('Dropped table ' + table)
     except:
         print('database table did not exist')
     command = 'create table %s as %s' % (table, query)
@@ -139,4 +140,4 @@ def dumpdb(dbfile, table, num=10, format=False):
 
 def cleardb(dbfile, table):
     conn, curs = login(dbfile)
-    curs.execute('delete from ' + table)
+    curs.execute('drop table ' + table)
