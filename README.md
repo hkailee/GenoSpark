@@ -22,6 +22,7 @@ It depends on the following sofware to function:
 
 [VCFtools](https://vcftools.github.io/downloads.html) (version 0.1.15)  
 [bcftools](http://www.htslib.org/download/) (version 1.5, using htslib 1.5)  
+python (version 3.5 or higher)
 
 And the following python 3 libraries are required:
 
@@ -33,4 +34,4 @@ Before installing, please make sure all software are installed and their command
 respective python libraries available to the interpreter.  
 
 Be careful of software you may have installed that bundles their own python interpreter, 
-as they will most likely conflict with IM-TORNADO's operation due to missing libraries. 
+as they will most likely conflict with **GenoSpark**'s operation due to missing libraries. 
