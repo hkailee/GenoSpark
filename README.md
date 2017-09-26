@@ -18,9 +18,8 @@ The initial version
 ## Requirements
 
 **GenoSpark** was designed to run on Linux systems. It can run in OSX too (tested only in Sierra). 
+It depends on the following programs to function:
 
-**GenoSpark** depends on the following programs to function:
-
-[VCFtools](http://www.google.com) (version 0.1.15)
-bcftools (version 1.5, using htslib 1.5)
+[VCFtools](https://vcftools.github.io/downloads.html) (version 0.1.15)
+[bcftools](http://www.htslib.org/download/) (version 1.5, using htslib 1.5)
 
