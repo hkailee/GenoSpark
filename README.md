@@ -4,6 +4,14 @@
 on a Apache Spark framework running on top of Hadoop (Distributed filesystem). The current version of GenoSpark (v1.0, October 2017) 
 has a separate local SQLite version (i.e. Job performed on the usual local filesystem).
 
+<hr>
 
+## Changelog
 
+### Version 1.0.0
+The initial version
+
+<hr>
+
+## Requirements
 
