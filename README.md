@@ -8,7 +8,7 @@ has a separate local SQLite version (i.e. Job performed on the usual local files
 
 ## Changelog
 
-### Version 1.0.0
+### Version 1.0.0 (Oct 2017)
 The initial version
 
 <hr>
