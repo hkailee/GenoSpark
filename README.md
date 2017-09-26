@@ -35,3 +35,12 @@ respective python libraries available to the interpreter.
 
 Be careful of software you may have installed that bundles their own python interpreter, 
 as they will most likely conflict with **GenoSpark**'s operation due to missing libraries. 
+
+## Building
+
+The default way to build GenoSpark is:
+
+```
+$ git clone https://github.com/hkailee/GenoSpark.git  
+$ cd GenoSpark 
+```
