@@ -4,6 +4,15 @@
 on a Apache Spark framework running on top of Hadoop (Distributed filesystem). The current version of GenoSpark (v1.0, October 2017) 
 has a separate local SQLite version (i.e. Job performed on the usual local filesystem).
 
+The genomes included were:
+
+| Population Label | Population | Individuals | Data Source | 
+| ---------------- | ---------- | ----------- | ----------- |
+| CDX | Chinese | 93 | 1000 Genomes Project Phase3 | 
+| MAS | Malay | 100 | Singapore Public Heath Genomics SSMP |
+| INS | Indian | 38 | Singapore Public Heath Genomics SSIP |
+
+
 <hr>
 
 ## Changelog
