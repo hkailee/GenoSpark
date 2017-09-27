@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 ## vcftools freq the autosomes ##
 for CHR in {1..22} 
 do
