@@ -49,7 +49,14 @@ as they will most likely conflict with **GenoSpark**'s operation due to missing 
 
 The default way to build GenoSpark is:
 
+1. Git clone or download the software
 ```
 $ git clone https://github.com/hkailee/GenoSpark.git  
 $ cd GenoSpark 
 ```
+
+2. Download the all genome vcfs for the CDX, MAS, and INS (Reexecuting will resume the downloading process)
+```
+$ bin\download_vcf.sh
+```
+
