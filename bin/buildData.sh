@@ -72,7 +72,6 @@ do
     FILE=../vcf/SgMalay/vcf/2012_05/snps/SSM.chr$CHR.2012_05.genotypes.vcf.gz
     vcftools --gzvcf $FILE --freq --chr $CHR --out ../data/Malay/chr${CHR}_analysis
     bcftools query -f '%CHROM\t%POS\t%ID\n' $FILE -o ../data/Malay/chr${CHR}_rsID
-
 done
 
 ## vcftools freq chromosome X – the filenames have v1b instead of v5a like autosomes ##
@@ -100,7 +99,6 @@ do
     FILE=../vcf/SgIndian/vcf/dataFreeze_Feb2013/SNP/biAllele/chr$CHR.consolidate.eff.PPH.vcf.gz
     vcftools --gzvcf $FILE --freq --chr $CHR --out ../data/Indian/chr${CHR}_analysis
     bcftools query -f '%CHROM\t%POS\t%ID\n' $FILE -o ../data/Indian/chr${CHR}_rsID
-
 done
 
 ## vcftools freq chromosome X – the filenames have v1b instead of v5a like autosomes ##
