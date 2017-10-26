@@ -19,6 +19,9 @@ PREFIX=output
 #Directory for storage of all vcfs.
 VCF=vcf/
 
+#File name of the 1000G samplelist
+CHX_LIST=1000G_CHX.txt
+
 #Directory for files created during the pipeline run.
 WORKSPACE=workspace/
 

@@ -60,3 +60,7 @@ $ cd GenoSpark
 $ bin\download_vcf.sh
 ```
 
+3. Build the required databases from the vcfs
+```
+$ bin\
+```
