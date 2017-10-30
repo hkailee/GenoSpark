@@ -6,7 +6,7 @@ from utils.createDB import *
 ##################
 ### Administration
 ##################
-logging.basicConfig(filename= 'log.txt', level=logging.INFO, 
+logging.basicConfig(filename= 'log.txt', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 workingFolder_Indian = "data/Indian/"
@@ -33,23 +33,23 @@ for file in freqFiles_Indian:
 ### For Malay Data and rsID
 ####################
 
-# startTime = time.time()
-# ########
-# makedb('dbase_Sqlite', 'Malay_Data', "(CHROM int(2), POS int(10), N_ALLELES int(1), N_CHR int(4), Malay_ALLELE_FREQ_1 char(30), Malay_ALLELE_FREQ_2 char(30))")
-# ########
-# for ID in freqFilesID:
-#     loaddb('Malay_Data', 'dbase_Sqlite', workingFolder_Malay + ID[0] +'_analysis.frq')
-#     logging.info('Inserting values from ' +  workingFolder_Malay + ID[0] + '_analysis.frq ' +
-#                  'to Malay_Data table of dbase_Sqlite database')
-# timeTaken = time.time()-startTime
-# print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
-#       '- Data Loading for Malay_Data table of dbase_Sqlite database completed: Took {} '
-#       'seconds to complete.'.format(timeTaken))
+startTime = time.time()
+########
+makedb('dbase_Sqlite', 'Malay_Data', "(CHROM int(2), POS int(10), N_ALLELES int(1), N_CHR int(4), Malay_ALLELE_FREQ_1 char(30), Malay_ALLELE_FREQ_2 char(30))")
+########
+for ID in freqFilesID:
+    loaddb('Malay_Data', 'dbase_Sqlite', workingFolder_Malay + ID[0] +'_analysis.frq')
+    logging.info('Inserting values from ' +  workingFolder_Malay + ID[0] + '_analysis.frq ' +
+                 'to Malay_Data table of dbase_Sqlite database')
+timeTaken = time.time()-startTime
+print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
+      '- Data Loading for Malay_Data table of dbase_Sqlite database completed: Took {} '
+      'seconds to complete.'.format(timeTaken))
 
-# Parsing the Malay vcf manually to generate rsID table
-# >>> created only for the Singapore Malay vcf as command below produced error as such::
-#    $ bcftools query -f '%CHROM\t%POS\t%ID\n' SSM.chr8.2012_05.genotypes.vcf.gz -o chr8_rsID
-#    $ [E::bcf_hdr_add_sample] Empty sample name: trailing spaces/tabs in the header line?
+## Parsing the Malay vcf manually to generate rsID table
+## >>> created only for the Singapore Malay vcf as command below produced error as such::
+##    $ bcftools query -f '%CHROM\t%POS\t%ID\n' SSM.chr8.2012_05.genotypes.vcf.gz -o chr8_rsID
+##    $ [E::bcf_hdr_add_sample] Empty sample name: trailing spaces/tabs in the header line?
 
 ## to gunzip vcf.gz for Malay only
 startTime = time.time()
@@ -140,10 +140,10 @@ print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
       'seconds to complete.'.format(timeTaken))
 
 ####################
-## Create combined tables (Data + rsID) for Malay, Indian, and Chinese
+### Create combined tables (Data + rsID) for Malay, Indian, and Chinese
 ####################
 
-# Malay
+## Malay
 query = '''SELECT 
                 Malay_Data.CHROM, 
                 Malay_Data.POS, 
@@ -180,7 +180,7 @@ query = '''SELECT
 
 combinetables('dbase_Sqlite', 'Indian',  query)
 
-# Chinese
+## Chinese
 query = '''SELECT 
                 Chinese_Data.CHROM, 
                 Chinese_Data.POS, 
@@ -201,7 +201,7 @@ query = '''SELECT
 combinetables('dbase_Sqlite', 'Chinese',  query)
 
 ####################
-## Drop unneccessary race_Data and race_rsID tables
+### Drop unneccessary race_Data and race_rsID tables
 ####################
 
 cleardb('dbase_Sqlite', 'Malay_Data')

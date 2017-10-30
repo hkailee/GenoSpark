@@ -11,7 +11,10 @@ buildData:
 	bin/buildData.sh
 
 build_SQLite:
-	./setup_sqlite.py
+	bin/setup_sqlite.py
+
+build_Spark:
+	bin/setup_spark.py
 
 #runA:
 #	../bin/run.sh -a
