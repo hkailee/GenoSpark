@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-import datetime, multiprocessing, logging, os, re, shutil, sys, sqlite3, subprocess, time
-import pandas as pd
+import datetime, logging, os, re, subprocess, time
 from utils.createDB import *
 
 ##################
@@ -34,35 +33,34 @@ for file in freqFiles_Indian:
 ### For Malay Data and rsID
 ####################
 
-startTime = time.time()
-########
-makedb('dbase_Sqlite', 'Malay_Data', "(CHROM int(2), POS int(10), N_ALLELES int(1), N_CHR int(4), Malay_ALLELE_FREQ_1 char(30), Malay_ALLELE_FREQ_2 char(30))")
-########
-for ID in freqFilesID:
-    loaddb('Malay_Data', 'dbase_Sqlite', workingFolder_Malay + ID[0] +'_analysis.frq')
-    logging.info('Inserting values from ' +  workingFolder_Malay + ID[0] + '_analysis.frq ' +
-                 'to Malay_Data table of dbase_Sqlite database')
-timeTaken = time.time()-startTime
-print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
-      '- Data Loading for Malay_Data table of dbase_Sqlite database completed: Took {} '
-      'seconds to complete.'.format(timeTaken))
+# startTime = time.time()
+# ########
+# makedb('dbase_Sqlite', 'Malay_Data', "(CHROM int(2), POS int(10), N_ALLELES int(1), N_CHR int(4), Malay_ALLELE_FREQ_1 char(30), Malay_ALLELE_FREQ_2 char(30))")
+# ########
+# for ID in freqFilesID:
+#     loaddb('Malay_Data', 'dbase_Sqlite', workingFolder_Malay + ID[0] +'_analysis.frq')
+#     logging.info('Inserting values from ' +  workingFolder_Malay + ID[0] + '_analysis.frq ' +
+#                  'to Malay_Data table of dbase_Sqlite database')
+# timeTaken = time.time()-startTime
+# print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
+#       '- Data Loading for Malay_Data table of dbase_Sqlite database completed: Took {} '
+#       'seconds to complete.'.format(timeTaken))
 
 # Parsing the Malay vcf manually to generate rsID table
 # >>> created only for the Singapore Malay vcf as command below produced error as such::
 #    $ bcftools query -f '%CHROM\t%POS\t%ID\n' SSM.chr8.2012_05.genotypes.vcf.gz -o chr8_rsID
 #    $ [E::bcf_hdr_add_sample] Empty sample name: trailing spaces/tabs in the header line?
 
-# to gunzip vcf.gz for Malay only
+## to gunzip vcf.gz for Malay only
 startTime = time.time()
 for ID in freqFilesID:
-    #print('gunzip '+  workingFolder_Malay + '/SSM.' + ID[0] + '.2012_05.genotypes.vcf.gz')
     try:
-        proc1 = subprocess.Popen(['gunzip', workingFolder_Malay + '/SSM.' + ID[0] + '.2012_05.genotypes.vcf.gz'],
+        proc1 = subprocess.Popen(['gunzip', '-k', 'vcf/SgMalay/vcf/2012_05/snps/' + 'SSM.' + ID[0] + '.2012_05.genotypes.vcf.gz'],
                              stdin=subprocess.PIPE, stdout=subprocess.PIPE)
         out, err = proc1.communicate()
-        logging.info('gunzip ' +  workingFolder_Malay + '/SSM.' + ID[0] + '.2012_05.genotypes.vcf.gz')
+        logging.info('gunzip ' + 'vcf/SgMalay/vcf/2012_05/snps/' + 'SSM.' + ID[0] + '.2012_05.genotypes.vcf.gz')
     except:
-        logging.info(workingFolder_Malay + '/SSM.' + ID[0] + '.2012_05.genotypes.vcf.gz not present')
+        logging.info('vcf/SgMalay/vcf/2012_05/snps/' + 'SSM.' + ID[0] + '.2012_05.genotypes.vcf.gz not present')
         pass
 timeTaken = time.time()-startTime
 print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
@@ -74,8 +72,8 @@ startTime = time.time()
 makedb('dbase_Sqlite', 'Malay_rsID', "(CHROM int(2), POS int(10), ID char(15))")
 ########
 for ID in freqFilesID:
-    loaddb_vcf_rsID('Malay_rsID', 'dbase_Sqlite', workingFolder_Malay + '/SSM.' + ID[0] + '.2012_05.genotypes.vcf')
-    logging.info('Inserting values from ' +  workingFolder_Malay + 'SSM.' + ID[0] +
+    loaddb_vcf_rsID('Malay_rsID', 'dbase_Sqlite', 'vcf/SgMalay/vcf/2012_05/snps/' + 'SSM.' + ID[0] + '.2012_05.genotypes.vcf')
+    logging.info('Inserting values from ' +  'vcf/SgMalay/vcf/2012_05/snps/'  + 'SSM.' + ID[0] +
                  '.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database')
 timeTaken = time.time()-startTime
 print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
@@ -141,4 +139,74 @@ print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
       '- Data Loading for Chinese_rsID table of dbase_Sqlite database completed: Took {} '
       'seconds to complete.'.format(timeTaken))
 
+####################
+## Create combined tables (Data + rsID) for Malay, Indian, and Chinese
+####################
 
+# Malay
+query = '''SELECT 
+                Malay_Data.CHROM, 
+                Malay_Data.POS, 
+                N_ALLELES, 
+                N_CHR, 
+                Malay_ALLELE_FREQ_1, 
+                Malay_ALLELE_FREQ_2, 
+                Malay_rsID.ID 
+            FROM 
+                Malay_Data 
+            INNER JOIN 
+                Malay_rsID 
+            ON 
+                Malay_Data.POS = Malay_rsID.POS'''
+
+combinetables('dbase_Sqlite', 'Malay',  query)
+
+
+# Indian
+query = '''SELECT 
+                Indian_Data.CHROM, 
+                Indian_Data.POS, 
+                N_ALLELES, 
+                N_CHR, 
+                Indian_ALLELE_FREQ_1, 
+                Indian_ALLELE_FREQ_2, 
+                Indian_rsID.ID 
+            FROM 
+                Indian_Data 
+            INNER JOIN 
+                Indian_rsID 
+            ON 
+                Indian_Data.POS = Indian_rsID.POS'''
+
+combinetables('dbase_Sqlite', 'Indian',  query)
+
+# Chinese
+query = '''SELECT 
+                Chinese_Data.CHROM, 
+                Chinese_Data.POS, 
+                N_ALLELES, 
+                N_CHR, 
+                Chinese_ALLELE_FREQ_1, 
+                Chinese_ALLELE_FREQ_2, 
+                Chinese_ALLELE_FREQ_3,
+                Chinese_ALLELE_FREQ_4,
+                Chinese_rsID.ID 
+            FROM 
+                Chinese_Data 
+            INNER JOIN 
+                Chinese_rsID 
+            ON 
+                Chinese_Data.POS = Chinese_rsID.POS'''
+
+combinetables('dbase_Sqlite', 'Chinese',  query)
+
+####################
+## Drop unneccessary race_Data and race_rsID tables
+####################
+
+cleardb('dbase_Sqlite', 'Malay_Data')
+cleardb('dbase_Sqlite', 'Malay_rsID')
+cleardb('dbase_Sqlite', 'Indian_Data')
+cleardb('dbase_Sqlite', 'Indian_rsID')
+cleardb('dbase_Sqlite', 'Chinese_Data')
+cleardb('dbase_Sqlite', 'Chinese_rsID')

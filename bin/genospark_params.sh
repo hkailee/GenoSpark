@@ -19,6 +19,9 @@ PREFIX=output
 #Directory for storage of all vcfs.
 VCF=vcf/
 
+#Directory for storage of indian's vcfs
+VCFMalay=vcf/SgMalay/vcf/2012_05/snps
+
 #File name of the 1000G samplelist
 CHX_LIST=1000G_CHX.txt
 

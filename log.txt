@@ -1057,3 +1057,156 @@
 2017-09-26 13:30:57,215 - INFO - Inserting values from 1000G/Phase3/integrated/chr21_rsID to Chinese_rsID table of dbase_Sqlite database
 2017-09-26 13:31:12,377 - INFO - Inserting values from 1000G/Phase3/integrated/chr22_rsID to Chinese_rsID table of dbase_Sqlite database
 2017-09-26 13:31:58,571 - INFO - Inserting values from 1000G/Phase3/integrated/chrX_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-10-30 11:30:34,245 - INFO - Inserting values from data/Malay/chr1_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:30:56,054 - INFO - Inserting values from data/Malay/chr10_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:31:15,804 - INFO - Inserting values from data/Malay/chr11_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:31:35,029 - INFO - Inserting values from data/Malay/chr12_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:31:49,746 - INFO - Inserting values from data/Malay/chr13_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:32:03,535 - INFO - Inserting values from data/Malay/chr14_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:32:15,768 - INFO - Inserting values from data/Malay/chr15_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:32:29,887 - INFO - Inserting values from data/Malay/chr16_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:32:42,050 - INFO - Inserting values from data/Malay/chr17_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:32:54,073 - INFO - Inserting values from data/Malay/chr18_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:33:03,460 - INFO - Inserting values from data/Malay/chr19_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:33:13,655 - INFO - Inserting values from data/Malay/chr20_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:33:21,488 - INFO - Inserting values from data/Malay/chr21_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:33:28,329 - INFO - Inserting values from data/Malay/chr22_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:34:03,720 - INFO - Inserting values from data/Malay/chr2_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:34:36,359 - INFO - Inserting values from data/Malay/chr3_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:35:07,196 - INFO - Inserting values from data/Malay/chr4_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:35:34,734 - INFO - Inserting values from data/Malay/chr5_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:36:01,641 - INFO - Inserting values from data/Malay/chr6_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:36:25,888 - INFO - Inserting values from data/Malay/chr7_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:36:47,574 - INFO - Inserting values from data/Malay/chr8_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:38:37,621 - INFO - Inserting values from data/Malay/chr9_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:38:51,474 - INFO - Inserting values from data/Malay/chrX_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:38:51,489 - INFO - gunzip data/Malay//SSM.chr1.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,496 - INFO - gunzip data/Malay//SSM.chr10.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,503 - INFO - gunzip data/Malay//SSM.chr11.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,511 - INFO - gunzip data/Malay//SSM.chr12.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,518 - INFO - gunzip data/Malay//SSM.chr13.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,524 - INFO - gunzip data/Malay//SSM.chr14.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,529 - INFO - gunzip data/Malay//SSM.chr15.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,535 - INFO - gunzip data/Malay//SSM.chr16.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,545 - INFO - gunzip data/Malay//SSM.chr17.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,551 - INFO - gunzip data/Malay//SSM.chr18.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,556 - INFO - gunzip data/Malay//SSM.chr19.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,562 - INFO - gunzip data/Malay//SSM.chr20.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,570 - INFO - gunzip data/Malay//SSM.chr21.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,575 - INFO - gunzip data/Malay//SSM.chr22.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,580 - INFO - gunzip data/Malay//SSM.chr2.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,584 - INFO - gunzip data/Malay//SSM.chr3.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,589 - INFO - gunzip data/Malay//SSM.chr4.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,598 - INFO - gunzip data/Malay//SSM.chr5.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,604 - INFO - gunzip data/Malay//SSM.chr6.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,610 - INFO - gunzip data/Malay//SSM.chr7.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,615 - INFO - gunzip data/Malay//SSM.chr8.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,620 - INFO - gunzip data/Malay//SSM.chr9.2012_05.genotypes.vcf.gz
+2017-10-30 11:38:51,625 - INFO - gunzip data/Malay//SSM.chrX.2012_05.genotypes.vcf.gz
+2017-10-30 11:42:52,931 - INFO - Inserting values from data/Malay/chr1_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:43:13,541 - INFO - Inserting values from data/Malay/chr10_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:43:33,676 - INFO - Inserting values from data/Malay/chr11_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:43:53,202 - INFO - Inserting values from data/Malay/chr12_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:44:08,219 - INFO - Inserting values from data/Malay/chr13_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:44:22,293 - INFO - Inserting values from data/Malay/chr14_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:44:34,546 - INFO - Inserting values from data/Malay/chr15_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:44:48,077 - INFO - Inserting values from data/Malay/chr16_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:45:00,099 - INFO - Inserting values from data/Malay/chr17_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:45:11,875 - INFO - Inserting values from data/Malay/chr18_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:45:21,714 - INFO - Inserting values from data/Malay/chr19_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:45:31,119 - INFO - Inserting values from data/Malay/chr20_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:45:38,162 - INFO - Inserting values from data/Malay/chr21_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:45:44,981 - INFO - Inserting values from data/Malay/chr22_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:46:19,474 - INFO - Inserting values from data/Malay/chr2_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:46:48,343 - INFO - Inserting values from data/Malay/chr3_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:47:17,563 - INFO - Inserting values from data/Malay/chr4_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:47:43,084 - INFO - Inserting values from data/Malay/chr5_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:48:09,493 - INFO - Inserting values from data/Malay/chr6_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:48:33,404 - INFO - Inserting values from data/Malay/chr7_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:48:55,277 - INFO - Inserting values from data/Malay/chr8_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:49:13,738 - INFO - Inserting values from data/Malay/chr9_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:49:27,285 - INFO - Inserting values from data/Malay/chrX_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-10-30 11:49:27,294 - INFO - gunzip data/Malay/SSM.chr1.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,304 - INFO - gunzip data/Malay/SSM.chr10.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,312 - INFO - gunzip data/Malay/SSM.chr11.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,323 - INFO - gunzip data/Malay/SSM.chr12.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,329 - INFO - gunzip data/Malay/SSM.chr13.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,337 - INFO - gunzip data/Malay/SSM.chr14.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,345 - INFO - gunzip data/Malay/SSM.chr15.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,353 - INFO - gunzip data/Malay/SSM.chr16.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,359 - INFO - gunzip data/Malay/SSM.chr17.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,367 - INFO - gunzip data/Malay/SSM.chr18.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,374 - INFO - gunzip data/Malay/SSM.chr19.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,380 - INFO - gunzip data/Malay/SSM.chr20.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,386 - INFO - gunzip data/Malay/SSM.chr21.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,394 - INFO - gunzip data/Malay/SSM.chr22.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,402 - INFO - gunzip data/Malay/SSM.chr2.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,407 - INFO - gunzip data/Malay/SSM.chr3.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,415 - INFO - gunzip data/Malay/SSM.chr4.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,421 - INFO - gunzip data/Malay/SSM.chr5.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,429 - INFO - gunzip data/Malay/SSM.chr6.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,435 - INFO - gunzip data/Malay/SSM.chr7.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,442 - INFO - gunzip data/Malay/SSM.chr8.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,448 - INFO - gunzip data/Malay/SSM.chr9.2012_05.genotypes.vcf.gz
+2017-10-30 11:49:27,456 - INFO - gunzip data/Malay/SSM.chrX.2012_05.genotypes.vcf.gz
+2017-10-30 14:20:19,997 - INFO - SSM.chr1.2012_05.genotypes.vcf.gz not present
+2017-10-30 14:20:37,221 - INFO - gunzip SSM.chr1.2012_05.genotypes.vcf.gz
+2017-10-30 14:20:37,235 - INFO - gunzip SSM.chr10.2012_05.genotypes.vcf.gz
+2017-10-30 14:20:45,578 - INFO - gunzip SSM.chr11.2012_05.genotypes.vcf.gz
+2017-10-30 14:20:54,466 - INFO - gunzip SSM.chr12.2012_05.genotypes.vcf.gz
+2017-10-30 14:20:57,920 - INFO - gunzip SSM.chr13.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:00,218 - INFO - gunzip SSM.chr14.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:02,324 - INFO - gunzip SSM.chr15.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:04,600 - INFO - gunzip SSM.chr16.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:06,629 - INFO - gunzip SSM.chr17.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:08,923 - INFO - gunzip SSM.chr18.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:10,716 - INFO - gunzip SSM.chr19.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:12,394 - INFO - gunzip SSM.chr20.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:13,508 - INFO - gunzip SSM.chr21.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:14,902 - INFO - gunzip SSM.chr22.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:21,762 - INFO - gunzip SSM.chr2.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:27,976 - INFO - gunzip SSM.chr3.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:34,016 - INFO - gunzip SSM.chr4.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:38,527 - INFO - gunzip SSM.chr5.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:43,027 - INFO - gunzip SSM.chr6.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:47,243 - INFO - gunzip SSM.chr7.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:51,070 - INFO - gunzip SSM.chr8.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:54,171 - INFO - gunzip SSM.chr9.2012_05.genotypes.vcf.gz
+2017-10-30 14:21:56,371 - INFO - gunzip SSM.chrX.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,816 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr1.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,829 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr10.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,834 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr11.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,843 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr12.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,856 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr13.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,863 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr14.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,872 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr15.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,878 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr16.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,886 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr17.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,892 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr18.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,908 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr19.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,914 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr20.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,919 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr21.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,927 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr22.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,936 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr2.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,941 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr3.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,949 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr4.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,957 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr5.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,962 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr6.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,975 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr7.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,982 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr8.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:38,991 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr9.2012_05.genotypes.vcf.gz
+2017-10-30 14:26:39,005 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chrX.2012_05.genotypes.vcf.gz
+2017-10-30 14:30:30,114 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr1.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:30:43,321 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr10.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:32:15,608 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr11.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:33:40,826 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr12.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:34:09,489 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr13.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:35:00,046 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr14.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:35:43,670 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr15.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:36:25,126 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr16.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:36:55,388 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr17.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:37:25,509 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr18.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:37:47,265 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr19.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:38:10,594 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr20.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:38:23,232 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr21.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:38:35,988 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr22.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
