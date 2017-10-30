@@ -1210,3 +1210,6 @@
 2017-10-30 14:38:10,594 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr20.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
 2017-10-30 14:38:23,232 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr21.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
 2017-10-30 14:38:35,988 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr22.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:43:20,826 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr2.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:47:48,910 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr3.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-10-30 14:51:23,731 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr4.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database

@@ -57,10 +57,23 @@ $ cd GenoSpark
 
 2. Download the all genome vcfs for the CDX, MAS, and INS (Reexecuting will resume the downloading process)
 ```
-$ bin\download_vcf.sh
+$ make downloadVCF
 ```
 
-3. Build the required databases from the vcfs
+3. Build necessary data from from the vcfs
 ```
-$ bin\
+$ make buildData
 ```
+
+4. Build database  
+
+Option 1: SQLite
+```
+$ make build_SQLite
+```  
+Option 2: Distributed filesystem
+```
+$ make build_hdfsdb
+
+```
+    
