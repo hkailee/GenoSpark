@@ -14,18 +14,18 @@
 set -e
 
 ## get the params for this run
-source genospark_params.sh
+source bin/genospark_params.sh
 
 #####################
 ## Download vcf from 1000 Genome database
 #####################
 
 ## make vcfs storage directory
-[ -d ../$VCF ] || mkdir ../$VCF
+[ -d $VCF ] || mkdir $VCF
 
 ## make vcf storage sub-directory for 1000G
-[ -d ../$VCF/1000G ] || mkdir ../$VCF/1000G
-cd ../$VCF/1000G
+[ -d $VCF/1000G ] || mkdir $VCF/1000G
+cd $VCF/1000G
 
 FTP_SITE=ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502                                                       ## tells you which pop and superpop for each sample
 
