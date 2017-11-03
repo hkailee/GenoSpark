@@ -111,7 +111,7 @@ if __name__ == '__main__':
                 for i in df_Null_temp_working['Coordinate']:
                     bedFile.write('chr' + str(chrom) + '\t' + str(i - 1) + '\t' + str(i) + '\n')
             with open('output.fa', 'w') as outfile:
-                proc = subprocess.Popen(['seqtk', 'subseq', '../GRCh37/chr' + str(chrom) + '.fa', 'query.bed'],
+                proc = subprocess.Popen(['seqtk', 'subseq', '../../GRCh37/chr' + str(chrom) + '.fa', 'query.bed'],
                                         stdin=subprocess.PIPE, stdout=outfile)
                 out, err = proc.communicate()
 
