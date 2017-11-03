@@ -131,7 +131,7 @@ def dumpdb(dbfile, table, num=10, format=False):
             for row in rec:
                 print(row)
     else:
-        recs = makedicts(cursor, 'select * from ' + table)
+        recs = makedicts(curs, 'select * from ' + table)
         showformat(recs)
 
 ##############################################
@@ -140,4 +140,4 @@ def dumpdb(dbfile, table, num=10, format=False):
 
 def cleardb(dbfile, table):
     conn, curs = login(dbfile)
-    curs.execute('drop table ' + table)
+    curs.execute('DROP TABLE ' + table)
