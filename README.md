@@ -31,6 +31,7 @@ It depends on the following sofware to function:
 
 [VCFtools](https://vcftools.github.io/downloads.html) (version 0.1.15)  
 [bcftools](http://www.htslib.org/download/) (version 1.5, using htslib 1.5)  
+[seqtk](https://github.com/lh3/seqtk) (version 1.2-r101)
 python (version 3.5 or higher)
 
 And the following python 3 libraries are required:
