@@ -208,5 +208,144 @@ cleardb('dbase_Sqlite', 'Malay_Data')
 cleardb('dbase_Sqlite', 'Malay_rsID')
 cleardb('dbase_Sqlite', 'Indian_Data')
 cleardb('dbase_Sqlite', 'Indian_rsID')
-cleardb('dbase_Sqlite', 'Chinese_Data')
 cleardb('dbase_Sqlite', 'Chinese_rsID')
+
+
+####################
+### Denormalizing
+####################
+
+queryMergeCM = '''
+            SELECT 
+                * 
+            FROM 
+                Chinese 
+            LEFT OUTER JOIN 
+                Malay
+            ON
+                Chinese.POS = Malay.POS AND Chinese.CHROM = Malay.CHROM
+            UNION ALL
+            SELECT 
+                *
+            FROM
+                Malay
+            LEFT OUTER JOIN
+                Chinese
+            ON 
+                Chinese.POS = Malay.POS AND Chinese.CHROM = Malay.CHROM
+            WHERE Chinese.POS IS NULL
+            '''
+
+combinetables('dbase_Sqlite', 'CM',  queryMergeCM)
+
+queryMergeCI = '''
+            SELECT 
+                * 
+            FROM 
+                Chinese 
+            LEFT OUTER JOIN 
+                Indian
+            ON
+                Chinese.POS = Indian.POS AND Chinese.CHROM = Indian.CHROM
+            UNION ALL
+            SELECT 
+                *
+            FROM
+                Indian
+            LEFT OUTER JOIN
+                Chinese
+            ON 
+                Chinese.POS = Indian.POS AND Chinese.CHROM = Indian.CHROM
+            WHERE Chinese.POS IS NULL
+            '''
+
+combinetables('dbase_Sqlite', 'CI',  queryMergeCI)
+
+queryMergeCMI = '''
+            SELECT 
+                *
+            FROM 
+                CM 
+            LEFT OUTER JOIN 
+                CI
+            ON
+                CM.POS = CI.POS AND CM.CHROM = CI.CHROM
+            UNION ALL
+            SELECT 
+                * 
+            FROM 
+                CI 
+            LEFT OUTER JOIN 
+                CM
+            ON
+                CM.POS = CI.POS AND CM.CHROM = CI.CHROM  
+            WHERE CM.POS IS NULL
+            '''
+
+combinetables('dbase_Sqlite', 'CMI',  queryMergeCMI)
+
+cleardb('dbase_Sqlite', '_CMI_old')
+
+queryAlterTableName = '''
+                        ALTER TABLE CMI RENAME TO _CMI_old
+                        '''
+
+conn = sqlite3.connect('dbase_Sqlite')  # create or open db file
+curs = conn.cursor()
+curs.execute(queryAlterTableName)
+conn.commit()
+
+quearyColumns = '''(CHROM INTEGER, POS INTEGER, N_ALLELES INTEGER, N_CHR_Chinese INTEGER, Chinese_ALLELE_FREQ_1 VARCHAR,
+              Chinese_ALLELE_FREQ_2 VARCHAR, Chinese_ALLELE_FREQ_3 VARCHAR, Chinese_ALLELE_FREQ_4 VARCHAR, ID VARCHAR,
+              N_CHR_Malay INTEGER, Malay_ALLELE_FREQ_1 VARCHAR, Malay_ALLELE_FREQ_2 VARCHAR, N_CHR_Indian INTEGER,
+              Indian_ALLELE_FREQ_1 VARCHAR, Indian_ALLELE_FREQ_2 VARCHAR)'''
+
+makedb('dbase_Sqlite', 'CMI', quearyColumns)
+
+queryCMIIndex = '''
+         CREATE INDEX idx_chrom_pos 
+            ON 
+                CMI (CHROM, POS);
+        '''
+
+curs.execute(queryCMIIndex)
+conn.commit()
+
+queryCMIInsert = '''
+        INSERT INTO CMI
+            (CHROM,
+              POS,
+              N_ALLELES,
+              N_CHR_Chinese,
+              Chinese_ALLELE_FREQ_1,
+              Chinese_ALLELE_FREQ_2,
+              Chinese_ALLELE_FREQ_3,
+              Chinese_ALLELE_FREQ_4,
+              ID,
+              N_CHR_Malay,
+              Malay_ALLELE_FREQ_1,
+              Malay_ALLELE_FREQ_2,
+              N_CHR_Indian,
+              Indian_ALLELE_FREQ_1,
+              Indian_ALLELE_FREQ_2)
+         SELECT 
+             "CHROM",
+             "POS",
+             "N_ALLELES",
+             "N_CHR",
+             "Chinese_ALLELE_FREQ_1",
+             "Chinese_ALLELE_FREQ_2",
+             "Chinese_ALLELE_FREQ_3",
+             "Chinese_ALLELE_FREQ_4",
+             "ID",
+             "N_CHR:1",
+             "Malay_ALLELE_FREQ_1",
+             "Malay_ALLELE_FREQ_2",
+             "N_CHR:3",
+             "Indian_ALLELE_FREQ_1",
+             "Indian_ALLELE_FREQ_2"
+         FROM _CMI_old;
+        '''
+
+curs.execute(queryCMIInsert)
+conn.commit()

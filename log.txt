@@ -1645,3 +1645,187 @@
 2017-10-31 02:42:36,669 - INFO - Inserting values from data/Chinese/chr8_rsID to Chinese_rsID table of dbase_Sqlite database
 2017-10-31 02:43:24,000 - INFO - Inserting values from data/Chinese/chr9_rsID to Chinese_rsID table of dbase_Sqlite database
 2017-10-31 02:44:09,744 - INFO - Inserting values from data/Chinese/chrX_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-22 11:47:04,809 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr1.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,817 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr2.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,822 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr3.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,831 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr4.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,841 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr5.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,846 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr6.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,851 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr7.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,856 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr8.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,863 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr9.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,867 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr10.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,871 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr11.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,877 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr12.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,882 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr13.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,893 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr14.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,902 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr15.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,911 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr16.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,918 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr17.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,927 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr18.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,934 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr19.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,947 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr20.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,953 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr21.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,957 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chr22.2012_05.genotypes.vcf.gz
+2017-11-22 11:47:04,961 - INFO - gunzip SgMalay_vcf/2012_05/snps//SSM.chrX.2012_05.genotypes.vcf.gz
+2017-11-28 12:08:37,873 - INFO - Inserting values from data/Malay/chr1_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:08:52,486 - INFO - Inserting values from data/Malay/chr10_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:09:06,711 - INFO - Inserting values from data/Malay/chr11_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:09:20,634 - INFO - Inserting values from data/Malay/chr12_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:09:31,370 - INFO - Inserting values from data/Malay/chr13_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:09:41,034 - INFO - Inserting values from data/Malay/chr14_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:09:49,696 - INFO - Inserting values from data/Malay/chr15_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:09:59,037 - INFO - Inserting values from data/Malay/chr16_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:10:07,073 - INFO - Inserting values from data/Malay/chr17_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:10:15,444 - INFO - Inserting values from data/Malay/chr18_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:10:21,937 - INFO - Inserting values from data/Malay/chr19_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:10:28,373 - INFO - Inserting values from data/Malay/chr20_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:10:32,709 - INFO - Inserting values from data/Malay/chr21_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:10:36,810 - INFO - Inserting values from data/Malay/chr22_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:11:02,396 - INFO - Inserting values from data/Malay/chr2_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:11:23,442 - INFO - Inserting values from data/Malay/chr3_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:11:44,396 - INFO - Inserting values from data/Malay/chr4_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:12:03,147 - INFO - Inserting values from data/Malay/chr5_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:12:21,883 - INFO - Inserting values from data/Malay/chr6_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:12:38,868 - INFO - Inserting values from data/Malay/chr7_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:12:54,335 - INFO - Inserting values from data/Malay/chr8_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:13:07,560 - INFO - Inserting values from data/Malay/chr9_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:13:16,919 - INFO - Inserting values from data/Malay/chrX_analysis.frq to Malay_Data table of dbase_Sqlite database
+2017-11-28 12:13:16,943 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr1.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,947 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr10.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,951 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr11.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,954 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr12.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,957 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr13.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,960 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr14.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,964 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr15.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,967 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr16.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,971 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr17.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,974 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr18.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,977 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr19.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,981 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr20.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,984 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr21.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,990 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr22.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:16,997 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr2.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:17,001 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr3.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:17,005 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr4.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:17,009 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr5.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:17,013 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr6.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:17,016 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr7.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:17,019 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr8.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:17,024 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chr9.2012_05.genotypes.vcf.gz
+2017-11-28 12:13:17,028 - INFO - gunzip vcf/SgMalay/vcf/2012_05/snps/SSM.chrX.2012_05.genotypes.vcf.gz
+2017-11-28 12:15:52,726 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr1.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:16:00,727 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr10.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:16:30,463 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr11.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:16:55,978 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr12.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:17:13,562 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr13.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:17:29,375 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr14.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:17:42,868 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr15.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:17:58,453 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr16.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:18:11,476 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr17.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:18:24,004 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr18.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:18:34,281 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr19.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:18:44,228 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr20.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:18:50,596 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr21.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:18:56,668 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr22.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:21:25,272 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr2.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:23:09,523 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr3.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:24:39,026 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr4.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:25:44,401 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr5.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:26:52,090 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr6.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:27:46,901 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr7.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:28:17,579 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr8.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:28:39,887 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chr9.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:28:56,711 - INFO - Inserting values from vcf/SgMalay/vcf/2012_05/snps/SSM.chrX.2012_05.genotypes.vcf to Malay_rsID table of dbase_Sqlite database
+2017-11-28 12:29:13,477 - INFO - Inserting values from data/Indian/chr1_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:29:24,548 - INFO - Inserting values from data/Indian/chr10_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:29:35,027 - INFO - Inserting values from data/Indian/chr11_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:29:45,099 - INFO - Inserting values from data/Indian/chr12_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:29:53,079 - INFO - Inserting values from data/Indian/chr13_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:29:59,813 - INFO - Inserting values from data/Indian/chr14_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:30:05,939 - INFO - Inserting values from data/Indian/chr15_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:30:12,613 - INFO - Inserting values from data/Indian/chr16_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:30:18,503 - INFO - Inserting values from data/Indian/chr17_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:30:24,535 - INFO - Inserting values from data/Indian/chr18_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:30:29,426 - INFO - Inserting values from data/Indian/chr19_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:30:34,066 - INFO - Inserting values from data/Indian/chr20_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:30:37,064 - INFO - Inserting values from data/Indian/chr21_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:30:40,011 - INFO - Inserting values from data/Indian/chr22_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:30:57,939 - INFO - Inserting values from data/Indian/chr2_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:31:13,034 - INFO - Inserting values from data/Indian/chr3_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:31:28,139 - INFO - Inserting values from data/Indian/chr4_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:31:41,478 - INFO - Inserting values from data/Indian/chr5_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:31:55,376 - INFO - Inserting values from data/Indian/chr6_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:32:07,762 - INFO - Inserting values from data/Indian/chr7_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:32:19,350 - INFO - Inserting values from data/Indian/chr8_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:32:28,456 - INFO - Inserting values from data/Indian/chr9_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:32:36,018 - INFO - Inserting values from data/Indian/chrX_analysis.frq to Indian_Data table of dbase_Sqlite database
+2017-11-28 12:32:46,829 - INFO - Inserting values from data/Indian/chr1_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:32:54,077 - INFO - Inserting values from data/Indian/chr10_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:00,897 - INFO - Inserting values from data/Indian/chr11_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:07,603 - INFO - Inserting values from data/Indian/chr12_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:12,754 - INFO - Inserting values from data/Indian/chr13_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:17,166 - INFO - Inserting values from data/Indian/chr14_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:21,135 - INFO - Inserting values from data/Indian/chr15_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:25,506 - INFO - Inserting values from data/Indian/chr16_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:29,365 - INFO - Inserting values from data/Indian/chr17_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:33,300 - INFO - Inserting values from data/Indian/chr18_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:36,508 - INFO - Inserting values from data/Indian/chr19_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:39,506 - INFO - Inserting values from data/Indian/chr20_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:41,429 - INFO - Inserting values from data/Indian/chr21_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:43,398 - INFO - Inserting values from data/Indian/chr22_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:33:54,962 - INFO - Inserting values from data/Indian/chr2_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:34:04,843 - INFO - Inserting values from data/Indian/chr3_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:34:14,793 - INFO - Inserting values from data/Indian/chr4_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:34:23,406 - INFO - Inserting values from data/Indian/chr5_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:34:32,527 - INFO - Inserting values from data/Indian/chr6_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:34:40,488 - INFO - Inserting values from data/Indian/chr7_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:34:47,972 - INFO - Inserting values from data/Indian/chr8_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:34:53,901 - INFO - Inserting values from data/Indian/chr9_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:34:58,815 - INFO - Inserting values from data/Indian/chrX_rsID to Indian_rsID table of dbase_Sqlite database
+2017-11-28 12:42:28,536 - INFO - Inserting values from data/Chinese/chr1_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 12:47:45,310 - INFO - Inserting values from data/Chinese/chr10_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 12:53:55,699 - INFO - Inserting values from data/Chinese/chr11_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 12:59:14,259 - INFO - Inserting values from data/Chinese/chr12_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:03:05,871 - INFO - Inserting values from data/Chinese/chr13_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:06:22,508 - INFO - Inserting values from data/Chinese/chr14_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:09:27,207 - INFO - Inserting values from data/Chinese/chr15_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:12:42,841 - INFO - Inserting values from data/Chinese/chr16_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:16:30,942 - INFO - Inserting values from data/Chinese/chr17_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:19:12,431 - INFO - Inserting values from data/Chinese/chr18_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:21:22,888 - INFO - Inserting values from data/Chinese/chr19_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:23:34,671 - INFO - Inserting values from data/Chinese/chr20_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:24:54,414 - INFO - Inserting values from data/Chinese/chr21_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:26:14,755 - INFO - Inserting values from data/Chinese/chr22_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:34:45,101 - INFO - Inserting values from data/Chinese/chr2_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:41:35,187 - INFO - Inserting values from data/Chinese/chr3_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:48:20,952 - INFO - Inserting values from data/Chinese/chr4_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 13:55:13,247 - INFO - Inserting values from data/Chinese/chr5_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 14:01:48,986 - INFO - Inserting values from data/Chinese/chr6_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 14:07:59,652 - INFO - Inserting values from data/Chinese/chr7_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 14:14:06,438 - INFO - Inserting values from data/Chinese/chr8_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 14:18:48,130 - INFO - Inserting values from data/Chinese/chr9_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 14:23:00,564 - INFO - Inserting values from data/Chinese/chrX_analysis.frq to Chinese_Data table of dbase_Sqlite database
+2017-11-28 14:24:23,778 - INFO - Inserting values from data/Chinese/chr1_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:25:14,290 - INFO - Inserting values from data/Chinese/chr10_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:26:05,947 - INFO - Inserting values from data/Chinese/chr11_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:26:55,377 - INFO - Inserting values from data/Chinese/chr12_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:27:31,791 - INFO - Inserting values from data/Chinese/chr13_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:28:05,988 - INFO - Inserting values from data/Chinese/chr14_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:28:37,374 - INFO - Inserting values from data/Chinese/chr15_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:29:12,251 - INFO - Inserting values from data/Chinese/chr16_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:29:42,697 - INFO - Inserting values from data/Chinese/chr17_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:30:12,197 - INFO - Inserting values from data/Chinese/chr18_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:30:35,711 - INFO - Inserting values from data/Chinese/chr19_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:30:59,426 - INFO - Inserting values from data/Chinese/chr20_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:31:14,016 - INFO - Inserting values from data/Chinese/chr21_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:31:28,556 - INFO - Inserting values from data/Chinese/chr22_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:32:59,863 - INFO - Inserting values from data/Chinese/chr2_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:34:13,636 - INFO - Inserting values from data/Chinese/chr3_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:35:27,412 - INFO - Inserting values from data/Chinese/chr4_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:36:34,763 - INFO - Inserting values from data/Chinese/chr5_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:37:38,880 - INFO - Inserting values from data/Chinese/chr6_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:38:39,067 - INFO - Inserting values from data/Chinese/chr7_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:39:38,065 - INFO - Inserting values from data/Chinese/chr8_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:40:23,497 - INFO - Inserting values from data/Chinese/chr9_rsID to Chinese_rsID table of dbase_Sqlite database
+2017-11-28 14:41:07,543 - INFO - Inserting values from data/Chinese/chrX_rsID to Chinese_rsID table of dbase_Sqlite database

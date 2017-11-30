@@ -140,4 +140,9 @@ def dumpdb(dbfile, table, num=10, format=False):
 
 def cleardb(dbfile, table):
     conn, curs = login(dbfile)
-    curs.execute('DROP TABLE ' + table)
+    try:
+        curs.execute('drop table ' + table)
+        conn.commit()
+        print('Dropped table ', table)
+    except:
+        print(table, 'table did not exist, creating this table')
