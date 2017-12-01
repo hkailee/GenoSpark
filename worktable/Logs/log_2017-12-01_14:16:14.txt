@@ -1,0 +1,5 @@
+2017-12-01 14:16:14,054 - INFO - Command-line invocation: ./query.py query1.xlsx output.xls
+2017-12-01 14:16:14,054 - INFO - Runfolder path: /Volumes/Samsung_T3/SgPopulationGenetics/GenoSpark/worktable
+2017-12-01 14:16:16,244 - INFO - Query input table inserted as sql table.
+2017-12-01 14:16:17,103 - INFO - Data Retrieval for all races completing (1/2): Took 0.858544111251831 seconds.
+2017-12-01 14:16:36,334 - INFO - Data Retrieval for all races completed (2/2): Took 19.230865955352783 seconds to complete.

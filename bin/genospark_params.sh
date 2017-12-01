@@ -25,9 +25,6 @@ VCFMalay=vcf/SgMalay/vcf/2012_05/snps
 #File name of the 1000G samplelist
 CHX_LIST=1000G_CHX.txt
 
-#Directory for files created during the pipeline run.
-WORKSPACE=workspace/
-
 #Directory to place resulting files.
 RESULTS=results/
 

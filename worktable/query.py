@@ -2,7 +2,7 @@
 __author__ = 'Hong Kai LEE, Bustamin Kosmo, Benjamin Chor'
 version = '1.0'
 ##==========================================
-import datetime, os, subprocess, sys, time
+import datetime, os, subprocess, sys, time, logging
 import pandas as pd
 #from utils import logDecorator as lD
 ##==========================================
@@ -22,25 +22,38 @@ argsCheck(3) # Checks if the number of arguments are correct.
 inFile  = sys.argv[1]
 outFile = sys.argv[2]
 
-
+# Working environment/directory configuration
 sys.path.append(os.path.abspath('..'))
+workingFolder = os.getcwd()
+if not os.path.exists(workingFolder + '/Logs'):
+    os.makedirs(workingFolder + '/Logs')
+
+# Logging events...
+logging.basicConfig(filename=workingFolder + '/Logs/log_' + datetime.datetime.now().strftime('%Y-%m-%d_%H:%M:%S') + '.txt', level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+logging.info('Command-line invocation: ' + sys.argv[0] + ' ' + sys.argv[1] + ' ' + sys.argv[2])
+logging.info('Runfolder path: ' + workingFolder)
 
 if __name__ == '__main__':
     from bin.utils.createDB import *
 
-    ################
+    if not os.path.exists(workingFolder + '/results'):
+        os.makedirs(workingFolder + '/results')
+        logging.info('A "results" directory created. All outputs will be stored in this directory')
+    ###=================================
     ### Creating sql table for the input
-    ################
+    ###=================================
 
     xls_file = pd.ExcelFile(inFile)
     table = xls_file.parse('Sheet1')
     conn = sqlite3.connect('../dbase_Sqlite')
     cleardb('../dbase_Sqlite', 'dataFrame')
     table.to_sql('dataFrame', conn)
+    logging.info('Query input table inserted as sql table.')
 
-    ################
+    ###====================================================
     ### Querying from Chinese, Malay and Indian populations
-    ################
+    ###====================================================
 
     startTime = time.time()
 
@@ -57,6 +70,7 @@ if __name__ == '__main__':
     timeTaken = time.time()-startTime
     print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
           '- Data Retrieval for all races completing (1/2): Took {} seconds.'.format(timeTaken))
+    logging.info('Data Retrieval for all races completing (1/2): Took {} seconds.'.format(timeTaken))
 
     df_working = df[:]
 
@@ -71,7 +85,7 @@ if __name__ == '__main__':
                     for i in df_Null_temp_working['Coordinate']:
                         bedFile.write('chr' + str(chrom) + '\t' + str(i - 1) + '\t' + str(i) + '\n')
                 with open('output.fa', 'w') as outfile:
-                    proc = subprocess.Popen(['seqtk', 'subseq', 'GRCh37/chr' + str(chrom) + '.fa', 'query.bed'],
+                    proc = subprocess.Popen(['seqtk', 'subseq', '../data/GRCh37/chr' + str(chrom) + '.fa', 'query.bed'],
                                         stdin=subprocess.PIPE, stdout=outfile)
                     out, err = proc.communicate()
 
@@ -81,8 +95,9 @@ if __name__ == '__main__':
                     df_working.loc[(df_working.index == i), (ethnic + '_ALLELE_FREQ_1')] = str.capitalize(
                         p.readline().replace('\n', ':1'))
 
-    df_working.to_excel(outFile)
+    df_working.to_excel('results/' + outFile)
 
     timeTaken = time.time()-startTime
     print(datetime.datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
           '- Data Retrieval for all races completed (2/2): Took {} seconds to complete.'.format(timeTaken))
+    logging.info('Data Retrieval for all races completed (2/2): Took {} seconds to complete.'.format(timeTaken))

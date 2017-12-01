@@ -1,5 +1,6 @@
 init: 
 	pip install -r requirements.txt
+	[ -d worktable ] || mkdir worktable
 
 grantPermissions:
 	chmod 766 bin/*
