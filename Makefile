@@ -5,7 +5,7 @@ grantPermissions:
 	chmod 766 bin/*
 
 downloadVCF:
-	bin/download_vcf.sh
+	bin/download_genomes.sh
 
 buildData:
 	bin/buildData.sh
