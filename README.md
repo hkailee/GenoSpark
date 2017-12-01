@@ -34,7 +34,7 @@ It depends on the following sofware to function:
 [seqtk](https://github.com/lh3/seqtk) (version 1.2-r101)  
 python (version 3.5 or higher)
 
-And the following python 3 libraries are required (Can be installed using instruction below):
+And the following python 3 library packages are required (Can be installed using instruction below):
 
 pyspark  
 pandas  
@@ -58,7 +58,7 @@ $ cd GenoSpark
 
 2. pip install python 3 library packages required  
  ```
-$ pip3 install -r requirements.txt
+$ make init
 ```
 
 3. Download the all genome vcfs for the CDX, MAS, and INS (Reexecuting will resume the downloading process)
