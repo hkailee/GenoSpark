@@ -70,9 +70,9 @@ def combinetables(dbfile, table, query):
     conn, curs = login(dbfile)
     try:
         curs.execute('drop table ' + table)
-        print('Dropped table ' + table)
+        print('Dropped table ', table)
     except:
-        print('database table did not exist')
+        print(table, 'table did not exist, creating this table')
     command = 'create table %s as %s' % (table, query)
     curs.execute(command)
     conn.commit()
@@ -140,4 +140,9 @@ def dumpdb(dbfile, table, num=10, format=False):
 
 def cleardb(dbfile, table):
     conn, curs = login(dbfile)
-    curs.execute('drop table ' + table)
+    try:
+        curs.execute('drop table ' + table)
+        conn.commit()
+        print('Dropped table ', table)
+    except:
+        print(table, 'table did not exist, creating this table')
