@@ -61,17 +61,23 @@ $ cd GenoSpark
 $ make init
 ```
 
-3. Download the all genome vcfs for the CDX, MAS, and INS (Reexecuting will resume the downloading process)
+3. grant file permissions to all neccessary files
+ ```
+$ make grantPermissions   # root access is needed for most Linux distributions
+
+```
+
+4. Download the all genome vcfs for the CDX, MAS, and INS (Reexecuting will resume the downloading process)
 ```
 $ make downloadVCF
 ```
 
-4. Build necessary data from from the vcfs
+5. Build necessary data from from the vcfs
 ```
 $ make buildData
 ```
 
-5. Build database  
+6. Build database  
 
 Option 1: SQLite
 ```
