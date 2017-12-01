@@ -65,3 +65,12 @@ cd ../SgMalay
 ## Download the autosomes and sex chromosomes
 wget -c http://phg.nus.edu.sg/StatGen/public_html/SSMP/downloads/vcf.zip
 unzip -o vcf.zip
+
+## make vcf storage sub-directory for Singapore Malay
+[ -d ../../data ] || mkdir ../../data
+cd ../../data
+
+## Download the autosomes and sex chromosomes
+wget -c  ftp://hgdownload.cse.ucsc.edu/goldenPath/hg19/chromosomes -O GRCh37
+cd GRCh37
+gunzip *.fa.gz
